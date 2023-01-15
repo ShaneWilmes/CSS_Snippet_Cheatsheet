@@ -1,0 +1,17 @@
+.row {
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.card-column {
+    flex: 1 0 100%;
+    padding: 1.5rem;
+    transition: flex-basis 500ms linear;  /*keeps cards the same size when screen changes sizes*/
+    margin-bottom: 1.5rem;
+
+}
