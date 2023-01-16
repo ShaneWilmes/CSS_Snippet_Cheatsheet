@@ -1,3 +1,17 @@
+header {
+    width: 96%;
+    margin: 0 auto;
+    padding: 2.5rem;
+    text-align: center;
+    color: black;
+    background-color: dimgrey;
+}
+
+footer {
+    margin: 5.0rem;
+    text-align: center;
+}
+
 .row {
 display: flex;
 flex-wrap: wrap;
@@ -13,5 +27,80 @@ flex-direction: row;
     padding: 1.5rem;
     transition: flex-basis 500ms linear;  /*keeps cards the same size when screen changes sizes*/
     margin-bottom: 1.5rem;
-
 }
+
+.code-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 80%;
+    padding: 1rem;
+    color:  royalblue;
+    outline: 2px dashed;
+    outline-offset: -2px;
+    margin: 3rem 0 2.0rem 0;
+           
+}
+
+.card-header  {
+    position: relative;
+    margin:  -2rem 0 1.5rem 0;
+    background-color: whitesmoke;
+    color:  royalblue;
+    border: 2px solid black;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+    justify-content: center;
+    text-align: center;
+        
+}
+
+.card-body {
+    background-color: whitesmoke;
+    text-align: center;
+}
+
+
+.code-card .code-block {
+    flex-grow: 1;
+  }
+
+  .code-card pre {
+    /* set styles to make it so code wraps in <pre> instead of overflowing */
+    overflow: auto;
+    white-space: pre-wrap;
+    display: flex;
+    align-items: right;
+    tab-size: 4;
+    border-radius: 8px;
+    padding: 1.2rem 1rem;
+    text-align: left;
+  }
+
+  
+  
+  /* using a mobile-first approach, use `min-width` values going from narrow -> wide for a responsive design */
+  @media screen and (min-width: 768px) {
+    /* on tablets, set columns to only be 50% of the width and not grow */
+    .card-column {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+  
+    /* select the last child to grow to full width if it has space to grow */
+    .card-column:last-child {
+      flex-grow: 1;
+    }
+  }
+  
+  /* media query for larger screens */
+  @media screen and (min-width: 992px) {
+    header {
+      width: 75%;
+    }
+  
+    .card-column {
+      flex: 0 0 33.333%;
+      max-width: 33.333%;
+    }
+  }
