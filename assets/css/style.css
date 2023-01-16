@@ -74,7 +74,7 @@ flex-direction: row;
     overflow: auto;
     white-space: pre-wrap;
     display: flex;
-    align-items: right;
+    align-items: center;
     tab-size: 4;
     border-radius: 8px;
     padding: 1.2rem 1rem;
@@ -87,11 +87,22 @@ flex-direction: row;
     font-size: large;
   }
 
+  code {
+    text-align: left;       
+  }
+
+  /* creates a glow effect when hovering over these sections of the page */
+  .code-card:hover,
+  .code-card:hover .card-header {
+    box-shadow: inset 0px 0px 8px greenyellow, 0 0 15px greenyellow;
+  }
+
+
   
   
   /* using a mobile-first approach, use `min-width` values going from narrow -> wide for a responsive design */
   @media screen and (min-width: 768px) {
-    /* on tablets, set columns to only be 50% of the width and not grow */
+   
     .card-column {
       flex: 0 0 50%;
       max-width: 50%;
