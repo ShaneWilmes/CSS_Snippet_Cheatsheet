@@ -1,15 +1,24 @@
+
 header {
     width: 100%;
     margin: 0 auto;
     padding: 2.5rem;
     text-align: center;
-    color: black;
-    background-color: royalblue;
+    color: royalblue;
+    
 }
 
 footer {
     margin: 5.0rem;
     text-align: center;
+    background-color: royalblue;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+body {
+
+
 }
 
 .row {
@@ -94,12 +103,20 @@ flex-direction: row;
   /* creates a glow effect when hovering over these sections of the page */
   .code-card:hover,
   .code-card:hover .card-header {
-    box-shadow: inset 0px 0px 8px greenyellow, 0 0 15px greenyellow;
+    box-shadow: inset 0px 0px 8px gold, 0 0 15px gold;
   }
 
+  .code-card pre:active {
+    user-select: all;
+}
 
+  code {
+    font-family: monospace;
+    font-size: 125%;
+  }
+ 
   
-  
+    
   /* using a mobile-first approach, use `min-width` values going from narrow -> wide for a responsive design */
   @media screen and (min-width: 768px) {
    
