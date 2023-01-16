@@ -6,4 +6,11 @@ body {
     min-height: 100%;
     line-height: 1;  /* spacing between text */
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(155, 155, 155);
+}
+
+h1,
+h2,
+h3 {
+    font-size: 180%;
 }
