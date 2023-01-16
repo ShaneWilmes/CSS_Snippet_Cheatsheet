@@ -103,11 +103,16 @@ flex-direction: row;
   /* creates a glow effect when hovering over these sections of the page */
   .code-card:hover,
   .code-card:hover .card-header {
-    box-shadow: inset 0px 0px 8px gold, 0 0 15px gold;
+    box-shadow: inset 0px 0px 8px yellow, 0 0 15px yellow;
   }
 
   .code-card pre:active {
-    user-select: all;
+    user-select: all;    
+}
+
+::selection {
+    background-color: greenyellow;
+    color: black;
 }
 
   code {
