@@ -25,7 +25,7 @@ This application provides the following:
 
 * Media queries for correct device orientation and resolutions.
 
-#### Contact Info and Application location
+### Contact Info and Application Location
 
 * Email:  shanewilmes@yahoo.com
 
